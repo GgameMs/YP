@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\lab1.3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD59B8F1-A300-4ED9-8FB7-730BAC6FC36A}|lab1.3\\lab1.3.fsproj|c:\\users\\admin\\source\\repos\\lab1.3\\lab1.3\\program.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}",
+      "RelativeMoniker": "D:0:0:{DD59B8F1-A300-4ED9-8FB7-730BAC6FC36A}|lab1.3\\lab1.3.fsproj|solutionrelative:lab1.3\\program.fs||{8A5AA6CF-46E3-4520-A70A-7393D15233E9}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.fs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\lab1.3\\lab1.3\\Program.fs",
+              "RelativeDocumentMoniker": "lab1.3\\Program.fs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\lab1.3\\lab1.3\\Program.fs*",
+              "RelativeToolTip": "lab1.3\\Program.fs*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAEIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-02-24T22:42:01.33Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
