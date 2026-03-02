@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EjHVzj8+978=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\source\\repos\\lab2.2\\lab2.2\\lab2.2.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\fsharp.core\\10.0.103\\fsharp.core.10.0.103.nupkg.sha512"
+  ],
+  "logs": []
+}
