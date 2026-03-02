@@ -22,5 +22,5 @@ let Length_sum l1 = List.fold (fun acc (x:string) -> acc + x.Length) 0 l1
 [<EntryPoint>]
 let main _ =
     let n = input ()
-    printfn "Список максимальных цифр: %A?" (Length_sum n)
+    printfn "Суммарная длина всех элементов списка: %i" (Length_sum n)
     0
