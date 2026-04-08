@@ -1,0 +1,66 @@
+% elem(X, S) — X принадлежит списку-множеству S
+elem(X, [X|_]).
+elem(X, [_|T]) :-
+    elem(X, T).
+
+% subset(A, B) — A является подмножеством B
+subset([], _).
+subset([H|T], S) :-
+    elem(H, S),
+    subset(T, S).
+
+% same_set(A, B) — множества A и B равны
+same_set(A, B) :-
+    subset(A, B),
+    subset(B, A).
+
+% union(A, B, U) — U = A ∪ B
+union([], S, S).
+union([H|T], S, U) :-
+    elem(H, S),
+    !,
+    union(T, S, U).
+union([H|T], S, [H|U]) :-
+    union(T, S, U).
+
+% intersect(A, B, I) — I = A ∩ B
+intersect([], _, []).
+intersect([H|T], S, [H|I]) :-
+    elem(H, S),
+    !,
+    intersect(T, S, I).
+intersect([_|T], S, I) :-
+    intersect(T, S, I).
+
+% diff(A, B, D) — D = A \ B
+diff([], _, []).
+diff([H|T], S, D) :-
+    elem(H, S),
+    !,
+    diff(T, S, D).
+diff([H|T], S, [H|D]) :-
+    diff(T, S, D).
+
+% Проверка закона де Моргана:
+% U \ (A ∪ B) = (U \ A) ∩ (U \ B)
+de_morgan_union(U, A, B) :-
+    union(A, B, AB),
+    diff(U, AB, Left),
+    diff(U, A, UA),
+    diff(U, B, UB),
+    intersect(UA, UB, Right),
+    same_set(Left, Right).
+    
+:- initialization(main).
+    
+main :-
+    U = [1,2,3,4,5],
+    A = [1,3],
+    B = [3,4],
+
+    ( de_morgan_union(U, A, B) ->
+        write('True'), nl
+    ;
+        write('False'), nl
+    ),
+    halt.

@@ -1,0 +1,36 @@
+all_different([]).
+all_different([H|T]) :-
+    \+ member(H, T),
+    all_different(T).
+
+solve_expedition([
+    biologist-Bio,
+    hydrologist-Hydro,
+    synoptician-Syn,
+    radio_operator-Radio,
+    mechanic-Mech,
+    doctor-Doctor
+]) :-
+    member(Bio,   [e, g]),
+    member(Hydro, [b, f]),
+    member(Syn,   [f, g]),
+    member(Radio, [c, d]),
+    member(Mech,  [c, h]),
+    member(Doctor,[a, d]),
+
+    all_different([Bio, Hydro, Syn, Radio, Mech, Doctor]),
+
+    Selected = [Bio, Hydro, Syn, Radio, Mech, Doctor],
+
+    ( \+ member(f, Selected) ; member(b, Selected) ),
+    ( \+ member(d, Selected) ; ( \+ member(c, Selected), \+ member(h, Selected) ) ),
+    \+ (member(c, Selected), member(g, Selected)),
+    ( \+ member(a, Selected) ; member(b, Selected) ).
+    
+:- initialization(main).
+    
+main :-
+    solve_expedition(X),
+    write(X),
+    nl,
+    halt.

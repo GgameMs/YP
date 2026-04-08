@@ -1,0 +1,33 @@
+% delitel(N, D) — D является делителем N
+delitel(N, D) :-
+    integer(N),
+    N > 0,
+    between(1, N, D),
+    0 is N mod D.
+
+% deliteli(N, L) — список всех делителей N
+deliteli(N, L) :-
+    integer(N),
+    N > 0,
+    deliteli_(N, N, [], L).
+
+% Вспомогательный рекурсивный предикат
+deliteli_(_, 0, Acc, Acc) :- !.
+deliteli_(N, I, Acc, L) :-
+    I > 0,
+    0 is N mod I,
+    !,
+    I1 is I - 1,
+    deliteli_(N, I1, [I|Acc], L).
+deliteli_(N, I, Acc, L) :-
+    I > 0,
+    I1 is I - 1,
+    deliteli_(N, I1, Acc, L).
+
+:- initialization(main).
+
+main :-
+    deliteli(12, L),
+    write(L),
+    nl,
+    halt.

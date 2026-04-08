@@ -1,0 +1,18 @@
+sum_even([], 0).
+
+sum_even([H|T], Sum) :-
+    0 is H mod 2,
+    !,
+    sum_even(T, SumTail),
+    Sum is SumTail + H.
+
+sum_even([_|T], Sum) :-
+    sum_even(T, Sum).
+    
+:- initialization(main).
+
+main :-
+    sum_even([1, 2, 3, 4, 6, 7], S),
+    write(S),
+    nl,
+    halt.
