@@ -30,8 +30,7 @@
 
 
 ### Тестирование
-
-
+<img width="1069" height="670" alt="Снимок экрана 2026-04-15 054812" src="https://github.com/user-attachments/assets/f8c3f255-c212-4919-85aa-b0e4ee5ae2ba" />
 
 
 
@@ -48,4 +47,4 @@
 
 
 ### Тестирование
-
+<img width="667" height="774" alt="Снимок экрана 2026-04-15 054851" src="https://github.com/user-attachments/assets/dc10fdd0-d4e9-421e-8a92-5d63bde62716" />
