@@ -13,8 +13,8 @@
 
 
 ### Тестирование
-![Uploading Снимок экрана 2026-04-15 052316.png…]()
 
+<img width="913" height="1136" alt="Снимок экрана 2026-04-15 052316" src="https://github.com/user-attachments/assets/40674b3c-64df-4a8c-b82a-10d79de3c4eb" />
 
 
 # Задание 2
@@ -23,6 +23,7 @@
 
 ### Текст задачи
 
+<img width="1422" height="177" alt="Снимок экрана 2026-04-15 052719" src="https://github.com/user-attachments/assets/d1e2c3ad-ca57-4e60-8645-e38eb7ca7a01" />
 
 
 ### Алгоритм решения
@@ -40,7 +41,8 @@
 
 ### Текст задачи
 
-Определим множество как список без повторяющихся элементов. Доказать закон де Моргана для объединения. 
+<img width="1426" height="441" alt="image" src="https://github.com/user-attachments/assets/2bf21a0a-ddf5-4ac2-8dca-2c27c0bdc495" />
+
 
 ### Алгоритм решения
 
